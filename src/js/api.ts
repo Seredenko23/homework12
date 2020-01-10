@@ -3,6 +3,7 @@ import User from "../models/user";
 import Post from "../models/post";
 
 const BASE_URL: string = 'https://jsonplaceholder.typicode.com';
+
 class Api {
 
     static async getUser(): Promise<response<User>> {

@@ -6,4 +6,4 @@ const userBtn: HTMLElement  = document.getElementById('users');
 const usersList: HTMLElement  = document.getElementById('usersList');
 const postsList: HTMLElement  = document.getElementById('postsList');
 const commentsList: HTMLElement  = document.getElementById('commentsList');
-const mainContent: HTMLElement = document.getElementById('mainContent');
+const mainContent: HTMLElement = document.getElementById('m-ainContent');
