@@ -4,9 +4,13 @@
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "allowJs": true
+    "allowJs": true,
+    "moduleResolution": "node"
   },
   "files": [
-    "./src/js/index.ts"
+    "./src/js/index.ts",
+    "./src/js/api.ts",
+    "./src/js/HTMLRenderer.ts",
+    "./src/js/render.ts"
   ]
 }

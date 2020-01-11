@@ -7,6 +7,13 @@ module.exports = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
   },
+  resolve: {
+    modules: [
+      "node_modules",
+      path.resolve(__dirname, "app")
+    ],
+    extensions: [".js", ".json", ".jsx", ".css", ".ts"],
+  },
   module: {
     rules: [
       {
