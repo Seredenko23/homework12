@@ -6,7 +6,7 @@ import comment from "../models/comment";
 import response from "../models/response";
 
 class render {
-    static createUserList(users: Array<User>, place: HTMLElement) {
+    static createUserList(users: Array<User>, place: HTMLElement): Array<HTMLElement> {
         return users.map((user: User) => {
             const listEl: HTMLElement = HTMLRenderer.render({
                 tag: 'a',
@@ -19,7 +19,7 @@ class render {
         })
     }
 
-    static createPostsList(posts: Array<Post> , place: HTMLElement) {
+    static createPostsList(posts: Array<Post> , place: HTMLElement): Array<Promise<HTMLElement>> {
         return posts.map(async (post: Post) => {
             const listEl: HTMLElement = HTMLRenderer.render({
                 tag: 'a',
@@ -53,7 +53,7 @@ class render {
         })
     }
 
-    static createCommentsList(comments: Array<comment>, place: HTMLElement) {
+    static createCommentsList(comments: Array<comment>, place: HTMLElement): Array<HTMLElement> {
         return comments.map((comment: comment) => {
             const listEl: HTMLElement = HTMLRenderer.render({
                 tag: 'li',
