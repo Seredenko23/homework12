@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   entry: './src/js/index.ts',
@@ -9,10 +9,10 @@ module.exports = {
   },
   resolve: {
     modules: [
-      "node_modules",
-      path.resolve(__dirname, "app")
+      'node_modules',
+      path.resolve(__dirname, 'app')
     ],
-    extensions: [".js", ".json", ".jsx", ".css", ".ts"],
+    extensions: ['.js', '.json', '.jsx', '.css', '.ts']
   },
   module: {
     rules: [
@@ -41,7 +41,7 @@ module.exports = {
         use: [
           {
             loader: 'awesome-typescript-loader'
-          },
+          }
         ]
       }
     ]
@@ -52,4 +52,4 @@ module.exports = {
       filename: './index.html'
     })
   ]
-};
+}

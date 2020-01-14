@@ -2,8 +2,7 @@ import response from "../models/response";
 import User from "../models/user";
 import Post from "../models/post";
 import comment from "../models/comment";
-
-const BASE_URL: string = 'https://jsonplaceholder.typicode.com';
+import { BASE_URL } from "../config/config";
 
 class Api {
 
